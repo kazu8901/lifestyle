@@ -32,17 +32,17 @@ services:
 
    # コンテナ内の環境変数を指定。環境変数を渡すとビルド時に設定してくれるDockerイメージがあるので、利用の際はDocker Hubのサイトで確認する
    environment:
-     MYSQL_ROOT_PASSWORD: root
+     MYSQL_ROOT_PASSWORD: asdf123
      MYSQL_DATABASE: lifestyle_db
      MYSQL_USER: lifestyle_user
-     MYSQL_PASSWORD: asdf123
+     MYSQL_PASSWORD: asdf1234
      TZ: 'Asia/Tokyo'
 
    # 起動時のコマンド
    command: mysqld --character-set-server=utf8 --collation-server=utf8_unicode_ci
    # ディレクトリ同期。設定ファイルとMySQLのデータが保存される場所を同期している。コンテナは基本的に起動時に変更されてもコンテナ自体が止まるとデータが消えてしまうため、保存しておきたいものはホストマシンと同期しておく必要がある。
    volumes:
-     - ./docker/db/data:/var/lib/mysql
+     - ./docker/db/data:/var/lib/mysqlife
      - ./docker/db/my.cnf:/etc/mysql/conf.d/my.cnf
     # ポートは左側の数字を変更する
    ports:
@@ -68,7 +68,7 @@ services:
    command: mysqld --character-set-server=utf8 --collation-server=utf8_unicode_ci
    # ディレクトリ同期。設定ファイルとMySQLのデータが保存される場所を同期している。コンテナは基本的に起動時に変更されてもコンテナ自体が止まるとデータが消えてしまうため、保存しておきたいものはホストマシンと同期しておく必要がある。
    volumes:
-     - ./docker/db/data:/var/lib/mysql2
+     - ./docker/db/data:/var/lib/mysqllife2
      - ./docker/db/my.cnf:/etc/mysql/conf.d/my.cnf
    ports:
      - 3310:3306
