@@ -18,3 +18,11 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/mypage', 'UsersController@index');
+
+Route::get('/mypage/edit', 'UsersController@edit');
+Route::post('/mypage/edit', 'UsersController@update');
+
+Route::get('/deactive', 'Auth\DeactiveController@showDeactiveForm')->name('deactive.form');
+Route::post('/deactive', 'Auth\DeactiveController@deactive')->name('deactive');

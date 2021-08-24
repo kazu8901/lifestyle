@@ -1,0 +1,53 @@
+.content {
+  padding-top: 20px;
+  position: relative;
+}
+
+.icon_view {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px; 
+  margin: 0 0 10px 550px;
+}
+
+.name {
+  margin-top: 10px;
+  font-weight: 500;
+  width: 200px;
+  height: 27px;
+  background-color: #F8FAFC;
+  color: black;
+  border-style: solid;
+  border-color: gray;
+  border-width: 0px 0px 1px 0px;
+}
+
+.user_id {
+  margin-top: 10px;
+  font-weight: 500;
+  width: 200px;
+  height: 27px;
+  background-color: #F8FAFC;
+  color: black;
+  border-style: solid;
+  border-color: gray;
+  border-width: 0px 0px 1px 0px;
+}
+
+.intro_area {
+  position: relative;
+  height: 250px;
+}
+
+.intro {
+  margin-top: 10px;
+  background-color: #F8FAFC;
+  position: absolute;
+  top: 2px;
+  left: 484px;
+}
+
+label.intro_label {
+  position: absolute;
+  top: 2px;
+}
