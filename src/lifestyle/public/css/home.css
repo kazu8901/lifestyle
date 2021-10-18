@@ -1,0 +1,74 @@
+.box {
+  width: 50%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.post {
+  width: 100%;
+  border: solid 2px gray;
+  margin-top: 40px;
+  display: flex;
+}
+
+.icon-area {
+  height: 100%;
+  width: 15%;
+  padding: 15px 0 0 15px;
+}
+
+.icon {
+  border: solid 1px gray;
+  border-radius: 50%;
+  width: 90px;
+  height: 90px; 
+}
+
+.contents {
+  margin: 25px 0 0 15px;
+  width: 70%;
+}
+
+.name-area {
+  display: flex;
+}
+
+.name {
+  padding-right: 10px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.id {
+  color: gray;
+  padding-top: 5px;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.content {
+  font-size: 16px;
+  width: 70%;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  margin: 10px 0 15px 0;
+}
+
+.date {
+}
+
+.file {
+  height: 100px;
+  width: 100px;
+  margin-bottom: 15px;
+}
+
+.file-view {
+  height: 100px;
+  width: 100px;
+}

@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Support\Facades\Auth;
 
+use App\Post;
+
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -25,6 +27,9 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $auth = Auth::user();
+        // $posts = POST::all();
+        $posts = POST::with('user')->orderBy('created_at', 'desc')->get();
+        return view('home', ['auth' => $auth, 'posts' => $posts]);
     }
 }
