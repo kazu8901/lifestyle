@@ -26,3 +26,5 @@ Route::post('/mypage/edit', 'UsersController@update');
 
 Route::get('/deactive', 'Auth\DeactiveController@showDeactiveForm')->name('deactive.form');
 Route::post('/deactive', 'Auth\DeactiveController@deactive')->name('deactive');
+
+Route::resource('/post', 'PostController');
